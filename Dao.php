@@ -2,15 +2,15 @@
 
 class Dao{
 	
-	//private $host =  "us-cdbr-iron-east-05.cleardb.net";
-	//private $db = "heroku_4cb545623b270b4";
-	//private $user = "bd6d725ec5fb24";
-	//private $pass = "39d87c20";
+	private $host =  "us-cdbr-iron-east-05.cleardb.net";
+	private $db = "heroku_90f00bf5032685b";
+	private $user = "bb4c1b8f2fe7e3";
+	private $pass = "3d85b42e";
 
-	private $host = "localhost";
-  	private $db = "mypetsthebestdatabase";
-  	private $user = "root";
-  	private $pass = "";
+	// private $host = "localhost";
+ //  	private $db = "mypetsthebestdatabase";
+ //  	private $user = "root";
+ //  	private $pass = "";
 
 	public function __construct(){
 	}
