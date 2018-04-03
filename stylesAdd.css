@@ -1,0 +1,19 @@
+.rightBlock{
+	float: center;
+	width: 50%;
+	margin: 10px 25%;
+	border: true;
+	background: white;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #3E6E3E; 
+}
+
+h2{
+	text-align: center;
+
+}
+
+form{
+	padding: 0% 30%;
+}

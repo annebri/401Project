@@ -1,0 +1,17 @@
+
+.petcompare{
+	display: inline;
+	text-decoration: none;
+	font-size: 30px;
+	padding: 0px 10px;
+	border-left: solid 1px;
+}
+.category{
+	text-decoration: none;
+	font-size: 25px;
+	display: block;
+}
+
+.next{
+	font-size: 25px;
+}

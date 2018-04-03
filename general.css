@@ -1,0 +1,47 @@
+.background-top{
+	background: #8BF38A;
+	height: 210px;
+	padding: 10px;
+}
+
+.banner{
+	overflow: hidden;
+	height: 200;
+	background: #B3F82D;
+	background-image: url(karot4.jpg);
+	overflow: hidden;
+}
+
+.name{
+	background: #8BF38A;
+	font-size: 35;
+	float left;
+	height:200;
+	width: 210;
+	font-weight: bold;
+}
+
+.logo{
+	width: 150;
+	height:200;
+}
+body{
+	background: #F5F5F5;
+}
+#footer{
+	float: left;
+	position: fixed;
+	bottom: 0;
+}
+
+#footer > li {
+	display: inline;
+	border-left: solid 1px;
+	padding:0 10px;
+
+
+}
+#footer >li.namefooter {
+	float: left;
+	border-left: none;
+}
