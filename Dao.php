@@ -17,7 +17,7 @@ class Dao{
 
 	public function getConnection(){
 		try{
-			$conn = new PDO("mysql:host={$this->host};dbname={$this->db}", $this->user, $this->pass);
+			$conn = new PDO("mysql:host=us-cdbr-iron-east-05.cleardb.net;dbname=heroku_90f00bf5032685b", 'bb4c1b8f2fe7e3', '3d85b42e');
 			return $conn;
 		}catch(Exception $e){
 			echo "connection failed: " . $e->getMessage();
