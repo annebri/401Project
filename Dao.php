@@ -2,6 +2,8 @@
 
 class Dao{
 	
+	require_once(createTables.php);
+
 	private $host =  "us-cdbr-iron-east-05.cleardb.net";
 	private $db = "heroku_90f00bf5032685b";
 	private $user = "bb4c1b8f2fe7e3";
@@ -13,6 +15,8 @@ class Dao{
  //  	private $pass = "";
 
 	public function __construct(){
+		$cT = new createTable();
+		$cT->createAllTables();
 	}
 
 	public function getConnection(){
