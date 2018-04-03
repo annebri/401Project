@@ -21,7 +21,7 @@ require_once 'KLogger.php';
 		// print("Created users.\n");
 	
 		$sql_image =
-		"CREATE TABLE IF NOT EXISTS `UserInfo` (
+		"CREATE TABLE IF NOT EXISTS `pets` (
 			`petID` VARCHAR (512) PRIMARY KEY,
 			`filepath` VARCHAR (256) NOT NULL,
 			`owner` VARCHAR (256) NOT NULL,
@@ -30,7 +30,7 @@ require_once 'KLogger.php';
 		// print("Created usersinfo.\n");
 
 		$sql_pet =
-		"CREATE TABLE IF NOT EXISTS `UserInfo` (
+		"CREATE TABLE IF NOT EXISTS `images` (
 			`petID` VARCHAR (512) PRIMARY KEY,
 			`petName` VARCHAR (256) NOT NULL,
 			`owner` VARCHAR (256) NOT NULL,
