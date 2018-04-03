@@ -3,14 +3,11 @@ require_once 'KLogger.php';
 
 	class createTable {
 
-	public function __construct () {
-	}
-
 	public function createAllTables() {
 		require_once(Dao.php);
-    try {
+
 		$conn = getConnection();
-		// echo "connected";
+		echo "connected";
 		$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		$sql_users = 
 		"CREATE TABLE IF NOT EXISTS `users` (
@@ -52,10 +49,6 @@ require_once 'KLogger.php';
 		$db->exec($sql_pet);
 		// print("Created usersinfo.\n");
 	}
-	catch (PDOException $e) {
-        echo "connection failed: " . $e->getMessage();
-      $this->logger->logFatal("The database connection failed.");
 	}
-	}
-	}
+	
 ?>
