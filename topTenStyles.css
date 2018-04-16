@@ -1,0 +1,30 @@
+.panel, .flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #8BF38A;
+    border: solid 2px black;
+    font-size: 60px;
+    font-weight: 10px;
+    width: 410px;
+    display: block;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.panel {
+    padding: 50px;
+    display: none;
+    width: 300px;
+}
+
+img {
+	width: 200px;
+	padding: 10px 10px;
+	width: 40%;
+}
+.category{
+	padding: 20px 10px;
+	display: block;
+	float: none;
+}

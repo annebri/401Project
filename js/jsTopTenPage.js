@@ -1,0 +1,24 @@
+console.log("here");
+console.log("here");
+$(document).ready(function(){
+	$("#flipCute").click(function(){
+	    $("#panelCute").slideToggle();
+	});
+});
+console.log("here");
+$(document).ready(function(){
+	$("#elegflip").click(function(){
+	    $("#elegpanel").slideToggle();
+	});
+});
+console.log("here");
+$(document).ready(function(){
+	$("#adorbflip").click(function(){
+	    $("#adorbpanel").slideToggle();
+	});
+});
+$(document).ready(function(){
+	$("#flipCrazy").click(function(){
+	    $("#panelCrazy").slideToggle();
+	});
+});
