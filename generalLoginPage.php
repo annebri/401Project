@@ -6,6 +6,7 @@
 	<title>mypetisthebest</title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link rel="stylesheet" type="text/css" href="general.css">
+	<link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Indie+Flower" rel="stylesheet">
 </head>
 	<header><title>mypetisthebest</title></header>	
 	<body style>

@@ -22,7 +22,7 @@
 			unset($_SESSION['messages']);
 
 		?>
-			<h2>Login/Sign Up</h2>
+			<h2 id="loginheader">Login/Sign Up</h2>
 			<form action="loginHandler.php" method="POST">
 				<h5>Enter Username:
 				<input value="<?php echo isset($presets['username']) ? $presets['username'] : ''; ?>" placeholder="username here" type="text" id="username" name="username"></h5>

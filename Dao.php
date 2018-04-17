@@ -1,7 +1,6 @@
 <?php
 
 class Dao{
-	
 	private $host =  "us-cdbr-iron-east-05.cleardb.net";
 	private $db = "heroku_90f00bf5032685b";
 	private $user = "bb4c1b8f2fe7e3";
@@ -17,7 +16,7 @@ class Dao{
 
 	public function getConnection(){
 		try{
-			$conn = new PDO("mysql:host=us-cdbr-iron-east-05.cleardb.net;dbname=heroku_90f00bf5032685b", 'bb4c1b8f2fe7e3', '3d85b42e');
+			$conn = new PDO("mysql:host=us-cdbr-iron-east-05.cleardb.net;dbname=heroku_90f00bf5032685b", "bb4c1b8f2fe7e3", "3d85b42e");
 			return $conn;
 		}catch(Exception $e){
 			echo "connection failed: " . $e->getMessage();
@@ -150,7 +149,7 @@ class Dao{
 	}
 
 
-public function getNumVotesEleg($petID){
+	public function getNumVotesEleg($petID){
 		$conn=$this->getConnection();
 		$query=$conn->prepare("SELECT numVotesE FROM pets WHERE petID=:petID");
 		$query->bindParam(':petID', $petID);

@@ -15,6 +15,8 @@
 	<link rel="stylesheet" type="text/css" href="stylesMyHome.css">
 	<link rel="stylesheet" type="text/css" href="logedinGeneral.css">
 	<link rel="stylesheet" type="text/css" href="general.css">
+	<link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Indie+Flower" rel="stylesheet">
+
 </head>
 	<header><title>mypetisthebest</title></header>	
 	<body style>
@@ -28,7 +30,7 @@
 		</div>
 		<div class = "topbar">
 			<ul>
-				<li class="petcompare">
+				<li id="currentPage" class="petcompare">
 					<a href="myHomePage.php">My Pets</a>
 				</li>
 				<li class="petcompare">

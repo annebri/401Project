@@ -18,7 +18,7 @@
 		</div>
 		<div class = "topbar">
 			<ul>
-				<li class="petcompare">
+				<li id="currentPage" class="petcompare">
 					<a href="myHomePage.php">My Pets</a>
 				</li>
 				<li class="petcompare">

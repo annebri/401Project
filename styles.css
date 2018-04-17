@@ -10,6 +10,7 @@
 	background: #B3F82D;
 	background-image: url(karot4.jpg);
 	overflow: hidden;
+	font-family: 'Indie Flower', cursive;
 }
 
 .name{
@@ -18,7 +19,6 @@
 	float left;
 	height:200;
 	width: 210;
-	font-weight: bold;
 }
 
 .logo{
@@ -109,4 +109,9 @@ button{
 #footer >li.namefooter {
 	float: left;
 	border-left: none;
+}
+
+#loginheader{
+	  font-family: 'Do Hyeon', cursive;
+
 }

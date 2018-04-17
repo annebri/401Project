@@ -26,7 +26,7 @@
 			$imagePath="".$_FILES["fileToUpload"]["name"];
 
 			if (!move_uploaded_file($_FILES["fileToUpload"]["tmp_name"],$basePath.$imagePath)) {
-    			$_SESSION['sentiment'] = "bad";
+    				$_SESSION['sentiment'] = "bad";
     			$messages[]="Issue uploading image. Image may be too large.";
 				$_SESSION['messages']=$messages;
 				header("Location: addpet.php");

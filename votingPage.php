@@ -4,6 +4,7 @@
 	<link rel="stylesheet" type="text/css" href="stylesVotingPage.css">
 	<link rel="stylesheet" type="text/css" href="logedinGeneral.css">
 	<link rel="stylesheet" type="text/css" href="general.css">
+	<link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Indie+Flower" rel="stylesheet">
 
 </head>
 	<header><title>mypetisthebest</title></header>	
@@ -22,7 +23,7 @@
 				<li class="petcompare">
 					<a href="myHomePage.php">My Pets</a>
 				</li>
-				<li class="petcompare">
+				<li id="currentPage" class="petcompare">
 					<a href="votingPage.php">Voting</a>
 				</li>
 				<li class="petcompare">

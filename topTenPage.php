@@ -4,6 +4,10 @@
 	<link rel="stylesheet" type="text/css" href="stylesMyHome.css">
 	<link rel="stylesheet" type="text/css" href="logedinGeneral.css">
 	<link rel="stylesheet" type="text/css" href="general.css">
+	<link rel="stylesheet" type="text/css" href="topTenStyles.css">
+	<link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Indie+Flower" rel="stylesheet">
+	<script src="js/jquery-3.3.1.js"></script>
+	<script src="js/jsTopTenPage.js"></script>
 </head>
 	<header><title>mypetisthebest</title></header>	
 	<?php
@@ -34,7 +38,7 @@
 				<li class="petcompare">
 					<a href="votingPage.php">Voting</a>
 				</li>
-				<li class="petcompare">
+				<li id="currentPage" class="petcompare">
 					<a href="topTenPage.php">Top Pets</a>
 				</li>
 				<li class="petcompare">
@@ -44,10 +48,9 @@
 			</ul>
 		</div>
 		<div class="leftBlock">
-			<h2>Top Pets</h2>
+			<h2>Click to Reveal the Top Pets!</h2>
 			<div id = "MyPets">
 				<div class ="category">
-					<div class="text">Cutest</div>
 					<?php
 						$i=0;
 						$idCute=$pets[0]['petID'];	
@@ -60,14 +63,16 @@
 							$i++;
 						}
 						$imageCute=$dao->getPhoto($idCute);
+						?>
+						<div id="flipCute" class="flip">Cutest Pet!</div>
 
-						print "<img id = \"cutepet\" src='".$imageCute['filepath']."' alt=\"karot\">";
+						<?php
+						echo "<img id = \"panelCute\" class = \"panel\"src='".$imageCute['filepath']."' alt=\"karot\">";
 					?>
 					
 
 				</div>
 				<div class ="category">
-					<div class="text">Most Elegant</div>
 					<?php
 						$i=0;
 						$idEleg=$pets[0]['petID'];	
@@ -80,12 +85,15 @@
 							$i++;
 						}
 						$imageEleg=$dao->getPhoto($idEleg);
+						?>
+						<div id="elegflip" class="flip">Most Elegant Pet!</div>
 
-						print "<img id = \"elegpet\" src='".$imageEleg['filepath']."' alt=\"karot\">";
-					?>
+						<?php
+						echo "<img id = \"elegpanel\" class = \"panel\" src='".$imageEleg['filepath']."' alt=\"karot\">";
+						?>
+					
 				</div>
 				<div class ="category">
-					<div class="text">Most Adorable</div>
 					<?php
 						$i=0;
 						$idAdorb=$pets[0]['petID'];	
@@ -98,12 +106,15 @@
 							$i++;
 						}
 						$imageAdorb=$dao->getPhoto($idAdorb);
+						?>
+						<div id="adorbflip" class="flip">Most Adorable Pet!</div>
 
-						print "<img id = \"adorbpet\" src='".$imageAdorb['filepath']."' alt=\"karot\">";
-					?>
+						<?php
+						echo "<img id = \"adorbpanel\" class = \"panel\"  src='".$imageAdorb['filepath']."' alt=\"karot\">";
+						?>
+					
 				</div>
 				<div class ="category">
-					<div class="text">Craziest</div>
 					<?php
 						$i=0;
 						$idCrazy=$pets[0]['petID'];	
@@ -116,9 +127,13 @@
 							$i++;
 						}
 						$imageCrazy=$dao->getPhoto($idCrazy);
+						?>
+						<div id="flipCrazy" class="flip">Craziest Pet!</div>
 
-						print "<img id = \"crazypet\" src='".$imageCrazy['filepath']."' alt=\"karot\">";
-					?>
+						<?php
+						echo "<img id = \"panelCrazy\" class = \"panel\"  src='".$imageCrazy['filepath']."' alt=\"karot\">";
+						?>
+				
 				</div>
 			</div>
 		</div>
